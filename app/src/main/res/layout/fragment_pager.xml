@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/page_bg"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:id="@+id/faqLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Zawhna awm thei tlanglawn  te"
+            android:textSize="18sp"
+            app:font_type="roboto_bold" />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/faq1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1.Thu ka zawn zawhah hian engtin ge a vaia ka tihlan leh ang?"
+            app:font_type="roboto_bold"
+             />
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:font_type="roboto_medium"
+            android:text="->A chung veilama Dictionary tih kha click mai tur ani e " />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/faq2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2.Thumal thar dah belh k duha engtin nge ka tih ang?"
+            app:font_type="roboto_bold"
+             />
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:font_type="roboto_medium"
+            android:text="->A chung dinglam kila hmeh tur awm kha hmet la thumal belhna chu alo lang mai ang" />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/faq3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3.Ka thumal zawn a awmlo zela enge a chhan?"
+            app:font_type="roboto_bold"
+             />
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:font_type="roboto_medium"
+            android:text="->Kan thumal leh hrilhfiahna tehi JF dictionary pdf atanga lak chhawn ani a,a chhuahna a rei deuh tawh avangin thumal kimlo ala tam avangin pawi kan ti hle." />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/faq4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:font_type="roboto_bold"
+            android:text="4.He app hi engati nge Playstore ah ka hmuh zawh loh?"
+             />
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:font_type="roboto_medium"
+            android:text="->Remchan lohna avangin kan la dah theiloa dah vat tum mek ani e." />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/faq5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:font_type="roboto_bold"
+            android:text="5.Thumal ka dah thar tehi a app rawn chhuak tharah rawn tel ve turin ka duh sia engtin nge ka tih ang?"
+             />
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:font_type="roboto_medium"
+            android:text="->Fakselna ah hian in thumal belh tekha inlo thawn tel anga a thar chhuah hunah rawn dah tel kan lo tum dawn nia." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <k.realmdataentry.CustomizedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note :"
+                app:font_type="roboto_bold"
+                 />
+
+            <k.realmdataentry.CustomizedText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:font_type="roboto_italic"
+                android:text="Thumal sipel leh awmzia,a parts of speech te leh entirna tepawh tih dikloh kan nei anih chuan in mi hriatthiamna kan dil e."
+                 />
+
+
+        </LinearLayout>
+
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/refnce"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.1"
+            android:paddingLeft="5dp"
+            app:font_type="roboto_medium"
+            android:text="Reference : JF Dictionary" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

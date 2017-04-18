@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/faq"
+        android:orderInCategory="100"
+        android:title="Zawhna tlanglawn"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="200"
+        android:title="Siamtu lam"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/contribute"
+        android:orderInCategory="300"
+        android:title="Thumal belhna"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/complaintbox"
+        android:orderInCategory="400"
+        android:title="Fakselna"
+        app:showAsAction="ifRoom" />
+
+</menu>

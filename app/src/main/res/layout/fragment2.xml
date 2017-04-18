@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/aboutRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/devTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text=" Developer "
+            android:textStyle="bold"
+            app:font_type="roboto_bold" />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/devnameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devTV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text="Lallawmzuala khawlhring"
+            app:font_type="roboto_bold" />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/devaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devnameTV"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            app:font_type="roboto_medium"
+            android:text="Domalguda,Hyderabad" />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/devemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devaddress"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            app:font_type="roboto_medium"
+            android:text="synxuala@gmail.com" />
+
+        <k.realmdataentry.CustomizedText
+            android:id="@+id/devphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devemail"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            app:font_type="roboto_medium"
+            android:text="9487974723" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

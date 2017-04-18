@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:tabWidgetStyle">@style/styletab</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <declare-styleable name="CustomizedText" >
+        <attr name="font_type" format="enum" >
+            <enum name="roboto_bold" value="1" />
+            <enum name="roboto_italic" value="2" />
+            <enum name="roboto_light" value="3" />
+            <enum name="roboto_medium" value="4" />
+            <enum name="roboto_regular" value="5" />
+            <enum name="roboto_thin" value="6"/>
+        </attr>
+    </declare-styleable>
+
+    <style name="TexActivity">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="styletab" parent="Theme.AppCompat.DayNight.NoActionBar" >
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabIndicatorColor">@color/pagerBackground</item>
+    </style>
+</resources>

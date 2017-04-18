@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/page_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Fak/Sel na lam huang"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/feedbackET"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/feedsbmtBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Thawn na"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <k.realmdataentry.CustomizedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note : "
+            app:font_type="roboto_bold"
+            android:layout_marginLeft="5dp"
+            />
+        <k.realmdataentry.CustomizedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server kan la neih remchan loh avangin feedback hi developer email ah thawn tura ruahman ani."
+            android:paddingRight="5dp"
+            app:font_type="roboto_italic"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

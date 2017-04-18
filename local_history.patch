@@ -1,0 +1,91 @@
+Index: app/src/main/java/k/realmdataentry/Tex.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/k/realmdataentry/Tex.java	(revision )
++++ app/src/main/java/k/realmdataentry/Tex.java	(revision )
+@@ -92,7 +92,6 @@
+         this.initialiseTabHost(savedInstanceState);
+         this.intialiseViewPager();
+         position = getIntent().getIntExtra("id", 0);
+-        this.mViewPager.setCurrentItem(position);
+ //        ButterKnife.bind(this);
+     }
+ 
+@@ -126,7 +125,7 @@
+         this.mViewPager.setAdapter(this.mPagerAdapter);
+         this.mViewPager.setPageTransformer(true, new CubeOutTransformer());
+         this.mViewPager.setOnPageChangeListener(this);
+-
++        this.mViewPager.setCurrentItem(position);
+ 
+     }
+ 
+Index: app/src/main/java/k/realmdataentry/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/k/realmdataentry/MainActivity.java	(revision )
++++ app/src/main/java/k/realmdataentry/MainActivity.java	(revision )
+@@ -97,14 +97,14 @@
+ 
+     }
+ 
+-   /* @Override
++    @Override
+     protected void onResume() {
+         super.onResume();
+         realm = Realm.getDefaultInstance();
+         RealmResults<ModelClass> refresh = realm.where(ModelClass.class).findAllSorted("name");
+-        adapter=new RecyclerAdapter(MainActivity.this,refresh);
++        adapter.setFilteredList(refresh);
+         adapter.notifyDataSetChanged();
+-    }*/
++    }
+ 
+     @OnTouch(R.id.et_search)
+     boolean TextEntered() {
+@@ -209,7 +209,7 @@
+         RealmResults<ModelClass> refresh = realm.where(ModelClass.class).findAllSorted("name");
+         adapter.setFilteredList(refresh);
+         adapter.notifyDataSetChanged();
+-        et_search.setText("");
++        et_search.clearComposingText();
+     }
+ 
+     @OnClick(R.id.menu_btn)
+Index: app/src/main/java/k/realmdataentry/PagerFragment3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/k/realmdataentry/PagerFragment3.java	(revision )
++++ app/src/main/java/k/realmdataentry/PagerFragment3.java	(revision )
+@@ -75,8 +75,7 @@
+ 
+     }
+ 
+-    //    @OnClick(R.id.wordAdded)
+-    void WordAddClicked() {
++     void WordAddClicked() {
+         wordAddBTN.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+@@ -98,14 +97,6 @@
+                     modelClass.setDesc(desctemp);
+                     realm.commitTransaction();
+                     Toast.makeText(mContext, "I thumal belh chu dahthat ani e", Toast.LENGTH_SHORT).show();
+-                    /*realm.executeTransaction(new Realm.Transaction() {
+-                        @Override
+-                        public void execute(Realm realm) {
+-                            ModelClass modelClass = realm.createObject(ModelClass.class);
+-                            modelClass.setName(wordaddET.getText().toString());
+-                            modelClass.setDesc(descaddET.getText().toString());
+-                        }
+-                    });*/
+                 }
+             }
+         });
+\ No newline at end of file
