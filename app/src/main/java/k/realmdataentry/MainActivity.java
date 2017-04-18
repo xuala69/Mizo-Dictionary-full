@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         String searchedword = et_search.getText().toString();
         Realm.init(getApplicationContext());
         realm = Realm.getDefaultInstance();
+//        huasdhuhasduhausdh
 
         RealmResults<ModelClass> results = realm.where(ModelClass.class).contains("name", searchedword, Case.INSENSITIVE).findAll();
         if (results.size() > 0) {
